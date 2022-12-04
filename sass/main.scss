@@ -1,5 +1,26 @@
-$color: green;
-
-body {
-    background: $color;
-}
+// UTILS
+@import "./utils/vars";
+// BASE
+@import "./base/base";
+// UTILS
+@import "./utils/utils";
+// COMPONENTS
+@import "./components/component";
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/buttons";
+@import "./components/social";
+@import "./components/address";
+@import "./components/join";
+@import "./components/subscribe";
+@import "./components/projects";
+// LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/hang";
+@import "./layout/product";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";
+@import "./layout/modal";
+@import "./layout/hero-portfolio";

@@ -1,0 +1,101 @@
+/* PORTFOLIO PAGE */
+
+/* HERO SECTION PORTFOLIO */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Buttons system */
+.portfolio__list {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio .list {
+  display: flex;
+}
+
+/* Styles for title sections Prtfolio */
+.portfolio__title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio__container {
+  flex-wrap: wrap;
+}
+
+.portfolio__container .item {
+  display: block;
+
+  width: 370px;
+}
+
+.portfolio__container .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio__container .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.portfolio__container .link {
+  display: block;
+
+  transition: box-shadow var(--timing-function);
+}
+
+.portfolio__container .link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  transition: transform var(--timing-function);
+  transform: translateY(100%);
+}
+
+.portfolio__container .link:hover .project-thumb::before,
+.portfolio__container .link:hover .portfolio__description {
+  transform: translateY(0);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.portfolio__container p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.container-border {
+  display: block;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+
+  background-color: #ffffff;
+}

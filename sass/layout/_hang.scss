@@ -1,0 +1,66 @@
+/* HANG SECTION */
+/* Styles of the Hang section */
+.hang-section {
+  padding-top: 94px;
+}
+
+.hang-section__list {
+  display: flex;
+}
+
+.hang-section__item {
+  width: 270px;
+}
+
+.hang-section__item::before {
+  display: block;
+  margin-bottom: 30px;
+  content: "";
+  height: 120px;
+  width: 270px;
+
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hang-section__icon--antenna::before {
+  background-image: url("../../images/antenna.svg");
+}
+
+.hang-section__icon--clock::before {
+  background-image: url("../../images/clock.svg");
+}
+
+.hang-section__icon--diagram::before {
+  background-image: url("../../images/diagram.svg");
+}
+
+.hang-section__icon--astronaut::before {
+  background-image: url("../../images/astronaut.svg");
+}
+
+.hang-section__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hang-section__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+
+.hang-section__description {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
