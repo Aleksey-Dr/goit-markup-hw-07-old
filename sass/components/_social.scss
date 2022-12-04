@@ -12,6 +12,7 @@
   margin-right: 10px;
 }
 
+// scss
 .social-icons__link {
   display: flex;
   align-items: center;
@@ -24,11 +25,16 @@
   transition: background-color var(--timing-function);
 
   color: #afb1b8;
-}
 
-.social-icons__link:hover,
-.social-icons__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &:hover .social-icons__icon,
+  &:focus .social-icons__icon {
+    fill: #ffffff;
+  }
 }
 
 .social-icons__icon {
@@ -38,14 +44,6 @@
   transition: fill var(--timing-function);
 
   fill: currentColor;
-}
-
-.social-icons__link:hover .social-icons__icon {
-  fill: #ffffff;
-}
-
-.social-icons__link:focus .social-icons__icon {
-  fill: #ffffff;
 }
 
 // Join

@@ -8,13 +8,14 @@
   display: flex;
 }
 
+// scss
 .product-section__item {
   display: block;
   width: 370px;
-}
 
-.product-section__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .product-section__box {

@@ -1,3 +1,4 @@
+// Footer
 .address {
   margin-right: 70px;
 }
@@ -6,11 +7,8 @@
   margin-bottom: 10px;
 }
 
+// scss
 .address__link {
-  color: #ffffff;
-}
-
-.address a {
   transition: color var(--timing-function);
 
   font-style: normal;
@@ -18,9 +16,13 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.address a:hover,
-.address a:focus {
-  color: var(--accent-color);
+.address__link--color {
+  color: #ffffff;
 }

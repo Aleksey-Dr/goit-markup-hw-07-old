@@ -22,14 +22,16 @@
   display: flex;
 }
 
+// scss
 .site-nav__item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
+// scss
 .site-nav__link {
   display: block;
   padding-top: 32px;
@@ -43,11 +45,11 @@
   letter-spacing: 0.02em;
 
   color: var(--title-text-color);
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .site-nav__link--active {
