@@ -170,17 +170,18 @@
     border-radius: 2px;
   }
 
+  input {
+    &:checked + label .icon-wrapper {
+      border: none;
+      background-color: var(--accent-color);
+    }
+
+    &:checked + label .icon-bird {
+      fill: #ffffff;
+    }
+  }
 }
 
 .icon-bird {
   fill: transparent;
-}
-
-.check-convention input:checked + label .icon-wrapper {
-  border: none;
-  background-color: var(--accent-color);
-}
-
-.check-convention input:checked + label .icon-bird {
-  fill: #ffffff;
 }

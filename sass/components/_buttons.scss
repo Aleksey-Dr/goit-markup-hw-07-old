@@ -131,8 +131,11 @@
 }
 
 // Portfolio
-.button-item:not(:last-child) {
-  margin-right: 8px;
+// scss
+.button-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 // scss

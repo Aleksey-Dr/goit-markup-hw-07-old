@@ -1,26 +1,26 @@
 /* Subscribe */
 .subscribe {
   margin-left: auto;
-}
 
-.subscribe__form {
-  display: flex;
-  align-items: flex-end;
-}
+  &__form {
+    display: flex;
+    align-items: flex-end;
+  }
 
-.subscribe__title {
-  display: block;
-  width: 207px;
-  margin-bottom: 20px;
+  &__title {
+    display: block;
+    width: 207px;
+    margin-bottom: 20px;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  color: #ffffff;
+    color: #ffffff;
+  }
 }
 
 .email-fild {

@@ -7,8 +7,10 @@
 }
 
 /* Class-utility .link - removed underline in links (in logo) */
-.link-decoration a {
-  text-decoration: none;
+.link-decoration {
+  a {
+    text-decoration: none;
+  }
 }
 
 .visually-hidden {

@@ -1,56 +1,54 @@
 .social-icons {
   display: flex;
-}
 
-.social-icons__item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-}
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 
-.social-icons__item:not(:last-child) {
-  margin-right: 10px;
-}
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
 
-// scss
-.social-icons__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-
-  transition: background-color var(--timing-function);
-
-  color: #afb1b8;
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+    &--background {
+      background-color: rgb(255, 255, 255, 0.1);
+    }
   }
 
-  &:hover .social-icons__icon,
-  &:focus .social-icons__icon {
-    fill: #ffffff;
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    transition: background-color var(--timing-function);
+
+    color: #afb1b8;
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+
+    &:hover .social-icons__icon,
+    &:focus .social-icons__icon {
+      fill: #ffffff;
+    }
   }
-}
 
-.social-icons__icon {
-  width: 20px;
-  height: 20px;
+  &__icon {
+    width: 20px;
+    height: 20px;
 
-  transition: fill var(--timing-function);
+    transition: fill var(--timing-function);
 
-  fill: currentColor;
-}
+    fill: currentColor;
 
-// Join
-.social-icons__item--background {
-  background-color: rgb(255, 255, 255, 0.1);
-}
-
-.social-icons__icon--white {
-  fill: #ffffff;
+    &--white {
+      fill: #ffffff;
+    }
+  }
 }

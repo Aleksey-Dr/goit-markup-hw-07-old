@@ -2,66 +2,75 @@
 /* Styles of the Hang section */
 .hang-section {
   padding-top: 94px;
-}
 
-.hang-section__list {
-  display: flex;
-}
-
-// scss
-.hang-section__item {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  &__list {
+    display: flex;
   }
 
-  &::before {
-    display: block;
-    margin-bottom: 30px;
-    content: "";
-    height: 120px;
+  &__item {
     width: 270px;
 
-    background-color: #f5f4fa;
-    background-repeat: no-repeat;
-    background-position: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &::before {
+      display: block;
+      margin-bottom: 30px;
+      content: "";
+      height: 120px;
+      width: 270px;
+
+      background-color: #f5f4fa;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
-}
 
-.hang-section__icon--antenna::before {
-  background-image: url("../../images/antenna.svg");
-}
+  &__icon {
+    &--antenna {
+      &::before {
+        background-image: url("../../images/antenna.svg");
+      }
+    }
 
-.hang-section__icon--clock::before {
-  background-image: url("../../images/clock.svg");
-}
+    &--clock {
+      &::before {
+        background-image: url("../../images/clock.svg");
+      }
+    }
 
-.hang-section__icon--diagram::before {
-  background-image: url("../../images/diagram.svg");
-}
+    &--diagram {
+      &::before {
+        background-image: url("../../images/diagram.svg");
+      }
+    }
 
-.hang-section__icon--astronaut::before {
-  background-image: url("../../images/astronaut.svg");
-}
+    &--astronaut {
+      &::before {
+        background-image: url("../../images/astronaut.svg");
+      }
+    }
+  }
 
-.hang-section__title {
-  margin-top: 0;
-  margin-bottom: 10px;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
 
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  color: var(--title-text-color);
-}
+    color: var(--title-text-color);
+  }
 
-.hang-section__description {
-  margin-top: 0;
-  margin-bottom: 0;
+  &__description {
+    margin-top: 0;
+    margin-bottom: 0;
 
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
