@@ -530,7 +530,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/studio-hero-back.jpg");
+    url("../images/studio-hero-back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -577,19 +577,19 @@ img {
 }
 
 .hang-section__icon--antenna::before {
-  background-image: url("../../images/antenna.svg");
+  background-image: url("../images/antenna.svg");
 }
 
 .hang-section__icon--clock::before {
-  background-image: url("../../images/clock.svg");
+  background-image: url("../images/clock.svg");
 }
 
 .hang-section__icon--diagram::before {
-  background-image: url("../../images/diagram.svg");
+  background-image: url("../images/diagram.svg");
 }
 
 .hang-section__icon--astronaut::before {
-  background-image: url("../../images/astronaut.svg");
+  background-image: url("../images/astronaut.svg");
 }
 
 .hang-section__title {
